@@ -6,5 +6,5 @@ function guessGame()  {
  {
     Math.floor(Math.random(min, max));
     console.log(guessGame);
-  },
+  }
 };
