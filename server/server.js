@@ -3,6 +3,8 @@ const bodyParser = require('body-parser')
 const app = express();
 const PORT = 5000;
 
+let player = [];
+
 // This must be added before GET & POST routes.
 app.use(bodyParser.urlencoded({extended:true}))
 
@@ -15,3 +17,13 @@ app.use(express.static('server/public'));
 app.listen(PORT, () => {
   console.log ('Server is running on port', PORT)
 })
+
+
+function guessGame()  {
+
+    let number = Math.floor(Math.random(1, 25));
+    console.log(number);
+    return number;
+    
+};
+

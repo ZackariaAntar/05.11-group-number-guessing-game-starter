@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Guess A Number!</title>
-  <script src="vendors/jquery.min.js"></script>
-  <script src="scripts/client.js"></script>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess A Number!</title>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <h1>YOUR GAME HERE!</h1>
-</body>
+    <section>
+      <form>
+        <input type="text" id="playerOne" placeholder="Player One" />
+        <input type="text" id="playerTwo" placeholder="Player Two" />
+        <button type="submit">Submit</button>
+        <!--RESTART BUTTON GOES HERE-->
+      </form>
+
+      <div>
+        <p id="counter">Number of guesses: <span id="counterNumber">0</span></p>
+      </div>
+
+      <div id="p1G">
+        <p>Player One has guessed:</p>
+        <ul id="playerOneList"></ul>
+      </div>
+
+      <div id="p2G">
+        <p>Player Two has guessed:</p>
+        <ul id="playerTwoList"></ul>
+      </div>
+
+      <div>
+        <!-- AREA TO DISPLAY WINNER MESSAGE-->
+      </div>
+
+      
+    </section>
+  </body>
 </html>
