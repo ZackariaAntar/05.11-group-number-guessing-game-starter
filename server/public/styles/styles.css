@@ -22,3 +22,13 @@ section.playerGuessHx {
     flex-direction: row;
     justify-content: space-around;
 }
+
+p{
+    color: black;
+}
+
+
+.fancy {
+    color: blue;
+
+}
